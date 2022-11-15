@@ -1,0 +1,49 @@
+======DMPOT_Settings======
+0.20                       | Perturbation Factor
+10                        | Total Number of Model Evaluations
+====== Extra ======
+0                          | Initial Para Index (0: Use Random Para; 1:Use Initial Para)
+0                          | Restart: Restart_Mechanism (0:Do Not Restart; 1:Restart)
+==========================
+Total Outlet-Variable pairs
+3
+Total Soft Data Constraint(s)
+0
+Outlets (Use space to separate multiple outlets, for example, 1 2 3)
+11 19 48
+IPRINT {1='daily', 2='monthly', and 3='annual', Separate multiple outlets with one space, for example, 1 2 3}
+1 1 1
+Output Variables (0-15): '0- Baseflow', '1-Stream Flow','2-Sediment','3-org-N','4-org-P','5-NO_3-N','6-NH_4-N','7-NO_2-N','8-Mineral-P','9-Soluble Pesticide','10-Sorbed Pesticide','11-Total Phosphorus','12-Total Nitrogen','13-Total Pesticide','14-TKN', '15-NO2+NO3'
+1 1 1
+Statistics (as Objective Functions): '1=1-NS', '2=BIAS','3=RMSE','4=1-R2','5=MSE'
+1 1 1
+Weight(s) of Objective Function(s)
+1 1 1
+Warmup Years
+2
+Total Simulation Period (Pick up the longest observation available)
+2013 01 01
+2017 07 19
+Apply Constraints (1 = YES, 0 = NO) for (1)DENITRIFICATION, (2) NO3 LEACHED, (3) P LEACHED, and (4) SSQ/(SQ+SSQ) NO3 Yield
+0 0 0 0
+Include Constraints {Lower and Upper limits for (1)DENITRIFICATION, (2) NO3 LEACHED, (3) P LEACHED, and (4) SSQ/(SQ+SSQ) NO3 Yield}
+0 0 0 0.6
+60 3 1 0.99
+Input Uncertainty Index (0 = exclude Input uncertainty , 1 = include Input uncertainty)
+0
+Measurement Uncertainty Index (0 = w/o measurement uncertainty , 1 = Probable Error Range , 2 = Probability Distribution)
+0
+Measurement Error (%)
+15
+Grouping subarea based on subarea(0= not grouping, 1=grouping)
+1
+Run number for best parameter sets
+99
+Sensitivity Analysis method: 1 for Sobol; 2 for Morris; 3 for Fast
+2
+Sensitivity analysis saltelli sample argument N: N should equal to 2^n
+32
+Sensitivity analysis morris number of resambles: eg. 100
+65
+Sensitivity analysis fast sampling: eg. 65, should be > 4M^2, M = 4 by default
+100
